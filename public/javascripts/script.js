@@ -1,5 +1,6 @@
 $(function() {
     var Sean = {
+        id: 1,
         name: 'Sean',
         favoriteCity: 'New York'
     };
@@ -37,7 +38,7 @@ $(function() {
             })
             .then(function(data){
                 $('#stepThree .result').html(JSON.stringify(data));
-            });;
+            });
     });
 
     $('#stepThree button').click(function(){
